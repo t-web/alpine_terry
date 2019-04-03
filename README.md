@@ -1,2 +1,14 @@
-# alpine_terry
-alpine_terry
+## 使用
+docker run -P 端口:端口 -d -v 本地:镜像内目录  -it 镜像 命令 
+
+#docker run -it napoler/alpine_terry_python python
+#docker run -d -v E:\:/terry  -it napoler/alpine_terry_python bash
+
+
+## 进入容器
+docker exec -t 6968f2928c17  bash
+
+
+## 打包镜像
+
+docker build -t alpine_terry_python /docker/images/test
